@@ -8,7 +8,7 @@
 <h3>What is the longest word you can think of?</h3>
 <form action="/score" method="post" data-turbo="false">
   <input class="w-100 form-control" type="text" name="guess" value="<%= params[:guess] %>" placeholder="Type your word...">
-  <input class="btn btn-primary" type="submit" value="Ask!">
+  <input class="btn btn-primary" type="submit" value="Guess!">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
   <%= hidden_field_tag :letters, @letters %>
 </form>
